@@ -71,7 +71,11 @@ function App() {
       ) : (
         <div>
           {countryToShow.map((countrySearch) => {
-            return <div>{countrySearch.name}</div>;
+            return (
+              <div onclick={() => console.log("do something...")}>
+                {countrySearch.name}
+              </div>
+            );
           })}
         </div>
       )}
