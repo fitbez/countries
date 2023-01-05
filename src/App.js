@@ -12,7 +12,7 @@ function App() {
   //   setCountries(newData);
   // };
 
-  const num = [2, 4, 5, 9];
+  // const num = [2, 4, 5, 9];
   // console.log(num.indexOf(2));
 
   const countryToShow = countries.filter((country) => {
@@ -72,7 +72,7 @@ function App() {
         <div>
           {countryToShow.map((countrySearch) => {
             return (
-              <div onclick={() => console.log("do something...")}>
+              <div onClick={() => setSearchedCountry(countrySearch.name)}>
                 {countrySearch.name}
               </div>
             );
